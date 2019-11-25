@@ -1,0 +1,31 @@
+rails new #{app_name} –skip-active-record
+vi Gemfile 
+gem ‘mongoid’, ‘~> 6.0’
+gem ‘bson_ext’
+
+rvm --create --ruby-version ruby-2.5.1@market_analyser
+
+
+bundle 
+
+rails g mongoid:config
+
+bundle clean --force
+
+cd /usr/local/opt/readline/lib 
+ln -s libreadline.8.0.dylib libreadline.7.dylib
+
+
+require 'nokogiri'
+require 'open-uri'
+months = Date::MONTHNAMES.compact.map {|m| m.downcase}
+years  = 2009..2019.to_a
+current_month = 'october'
+doc = Nokogiri::HTML(open("https://www.keralagold.com/daily-gold-prices-#{current_month}-2009.htm"))
+doc.css('div#content_area div#content_left table tr td').each do |td|
+   #puts td.content.to_s if td.content =~ /next/i && td.content
+   puts td.content.to_s if (td.content.present? && !(td.content =~ /date|price|previous|next/i))
+end
+
+
+doc.css('div#content_area div#content_left table tr td').select {|td|  td.content.to_s if (td.content.present? && !(td.content =~ /date|price|previous|next/i))}

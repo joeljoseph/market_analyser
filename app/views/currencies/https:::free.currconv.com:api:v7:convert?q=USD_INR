@@ -1,0 +1,16 @@
+https://free.currconv.com/api/v7/convert?q=USD_INR&compact=ultra&apiKey=3ca978c7be958b4d0acd
+
+
+
+https://openexchangerates.org/api/latest.json?app_id=17e9ed61f83f4a08a040a8b0b8d888b3
+
+
+
+rake db:seed
+
+rake currency_rate:latest
+
+
+
+
+

@@ -1,0 +1,34 @@
+
+										
+
+
+
+0. [BOTH]:     Bill Reminders card on payments tab - Design
+0. [BACKEND]:  Own account transfer Baroda	
+
+1. [FRONTEND]: Opening up credit to non-Pay + partitioning Get Started page + Register for Pay from amount entry page	- Experience
+2. [BOTH]: Africa Pay (1/3) - Strategic 
+3. Performance + Hygiene fixes	 (balance check and transaction success rate) - Experience
+   [BACKEND]: Success Rates / Transaction error codes / Bank esclalations	 - Experience
+   [BACKEND]: Balance check and transaction success rate 
+   [BACKEND]: Transaction response rate 
+   [BACKEND]: Bank SLA on hanging fund transfers 
+   [BACKEND]: Contact sync optimisation
+4. [FRONTEND]:X friends on Pay in Get Started
+   
+5. [BACKEND]: Transaction recon -	Experience
+   Partner recon included
+6. [FRONTEND]: Bottom sheet for intent call transaction on 3rd party merchants	- Experience
+7. [BOTH]: Gold(PWA) - Use cases
+8. [BOTH]: Dynamic card on Home Screen (eg: charity, P2A, BC promo etc)	- Growth
+9. [BOTH]: Transaction reminders (P2P, P2A) - Experience
+   Schedule collect request
+10.[BACKEND]: Utility improvements 	- Experience
+   [BACKEND]: BBPS error Pop up
+   [BACKEND]: Repeat debits for recharges  - Done
+   [BACKEND]: Automate addition of new billers 
+   [BACKEND]: Postpaid to BBPS
+   [BACKEND]: Validation error messages
+11.[BOTH]: Contextual Use cases in SMS	- Experience
+12.[FRONTEND]: History Revamp including cashback/refund entries	- Experience
+13.[BACKEND]:Growth Engine improvements

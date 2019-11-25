@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @commodity.name %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @commodity.category.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= number_to_currency_rs(@commodity.price) %>
+</p>
+
+
+<%#= link_to 'Edit', edit_commodity_path(@commodity) %> |
+<%= link_to 'Back', commodities_path %>
