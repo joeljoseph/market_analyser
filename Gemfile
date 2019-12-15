@@ -47,7 +47,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
-  gem 'sqlite3'
+  #gem 'sqlite3'
 end
 
 group :development do
@@ -60,7 +60,7 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
+  #gem 'pg'
 end
 
 group :test do

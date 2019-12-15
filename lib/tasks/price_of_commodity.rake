@@ -24,8 +24,8 @@ namespace :price_of_commodity do
     #('div#content_area div#content_left table tr td')
     #currnet month - daily - ('div#content_area div#content_left table:nth-of-type(5) tr td')
     #from 2019 - till last month - ('div#content_area div#content_left table:nth-of-type(4) tr td')
-  	t = resource.css('div#content_area div#content_left table:nth-of-type(5) tr td')
-    binding.pry
+  	t = resource.css('div#content_area div#content_left table:nth-of-type(4) tr td')
+    #binding.pry
 			                     t.select {|td|  td.content.to_s if (td.content.present? && !(td.content =~ /date|price|previous|next/i))}.
 			                     map(&:content).each_slice(2).to_h
   end
